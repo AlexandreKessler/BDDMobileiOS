@@ -84,6 +84,7 @@ class ListViewController: UIViewController {
             let item = Item(name: textField.text!)
             self.items2.append(item)
             self.saveChecklists()
+            self.searchBar(self.searchBar, textDidChange: self.searchBar.text!)
             self.tableView.reloadData()
             }
            
